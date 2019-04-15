@@ -25,70 +25,85 @@ def getdate(date_in):
     return True
 
 
+# Test Suite of Valid MM-DD Inputs
 def check_valid():
+    # Test Case 1
     try:
         result = getdate('01-01')
         if result is True:
             print('01-01 Passed : Expected Result True : Actual Result True')
     except ValueError:
         print('01-01 Failed : Expected Result True : Actual Result False')
+    # Test Case 2
     try:
         result = getdate('12-12')
         if result is True:
             print('12-12 Passed : Expected Result True : Actual Result True')
     except ValueError:
         print('12-12 Failed : Expected Result True : Actual Result False')
+    # Test Case 3
     try:
-        result = getdate('01-13')
+        result = getdate('11-13')
         if result is True:
-            print('01-13 Passed : Expected Result True : Actual Result True')
+            print('11-13 Passed : Expected Result True : Actual Result True')
     except ValueError:
-        print('01-13 Failed : Expected Result True : Actual Result False')
+        print('11-13 Failed : Expected Result True : Actual Result False')
+    # Test Case 4
     try:
-        result = getdate('02-27')
+        result = getdate('10-27')
         if result is True:
-            print('02-27 Passed : Expected Result True : Actual Result True')
+            print('10-27 Passed : Expected Result True : Actual Result True')
     except ValueError:
-        print('02-27 Failed : Expected Result True : Actual Result False')
+        print('10-27 Failed : Expected Result True : Actual Result False')
+    # Test Case 5
     try:
         result = getdate('02-28')
         if result is True:
             print('02-28 Passed : Expected Result True : Actual Result True')
     except ValueError:
         print('02-28 Failed : Expected Result True : Actual Result False')
+    # Test Case 6
     try:
         result = getdate('03-29')
         if result is True:
             print('03-29 Passed : Expected Result True : Actual Result True')
     except ValueError:
         print('03-29 Failed : Expected Result True : Actual Result False')
+    # Test Case 7
     try:
         result = getdate('04-30')
         if result is True:
             print('04-30 Passed : Expected Result True : Actual Result True')
     except ValueError:
         print('04-30 Failed : Expected Result True : Actual Result False')
+    # Test Case 8
     try:
         result = getdate('05-31')
         if result is True:
             print('05-31 Passed : Expected Result True : Actual Result True')
     except ValueError:
         print('05-31 Failed : Expected Result True : Actual Result False')
-    try:
-        result = getdate('01-01')
-        if result is True:
-            print('01-01 Passed : Expected Result True : Actual Result True')
-    except ValueError:
-        print('01-01 Failed : Expected Result True : Actual Result False')
 
 
+# Test Suite of InValid MM-DD Inputs
 def check_invalid():
+    # Test Case 9
+    test_input = '00-00'
     try:
-        result = getdate('00-00')
+        result = getdate(test_input)
         if result is False:
-            print('00-00 Passed : Expected Result False : Actual Result False')
+            print(test_input + ' Passed : Expected Result False : Actual Result False')
     except ValueError:
-        print('01-01 Failed : Expected Result False : Actual Result True')
+        print(test_input + ' Failed : Expected Result False : Actual Result True')
+    # Test Case 10
+    test_input = '13-01'
+    try:
+        result = getdate(test_input)
+        if result is False:
+            print(test_input + ' Passed : Expected Result False : Actual Result False')
+    except ValueError:
+        print(test_input + ' Failed : Expected Result False : Actual Result True')
+
 
 
 # date_input = input("Enter any month and day in the format MM-DD: ")
