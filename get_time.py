@@ -34,7 +34,7 @@ def check_valid():
     # Test Case 1
     test_input = '01-01'
     try:
-        result = getdate('01-01')
+        result = getdate(test_input)
         if result is True:
             print(test_input + ' Passed : Expected Result True : Actual Result True')
     except ValueError:
@@ -42,7 +42,7 @@ def check_valid():
     # Test Case 2
     test_input = '12-12'
     try:
-        result = getdate('12-12')
+        result = getdate(test_input)
         if result is True:
             print(test_input + ' Passed : Expected Result True : Actual Result True')
     except ValueError:
@@ -50,7 +50,7 @@ def check_valid():
     # Test Case 3
     test_input = '11-13'
     try:
-        result = getdate('11-13')
+        result = getdate(test_input)
         if result is True:
             print(test_input + ' Passed : Expected Result True : Actual Result True')
     except ValueError:
@@ -58,7 +58,7 @@ def check_valid():
     # Test Case 4
     test_input = '10-27'
     try:
-        result = getdate('10-27')
+        result = getdate(test_input)
         if result is True:
             print(test_input + ' Passed : Expected Result True : Actual Result True')
     except ValueError:
@@ -66,7 +66,7 @@ def check_valid():
     # Test Case 5
     test_input = '02-28'
     try:
-        result = getdate('02-28')
+        result = getdate(test_input)
         if result is True:
             print(test_input + ' Passed : Expected Result True : Actual Result True')
     except ValueError:
@@ -74,7 +74,7 @@ def check_valid():
     # Test Case 6
     test_input = '03-29'
     try:
-        result = getdate('03-29')
+        result = getdate(test_input)
         if result is True:
             print(test_input + ' Passed : Expected Result True : Actual Result True')
     except ValueError:
@@ -82,7 +82,7 @@ def check_valid():
     # Test Case 7
     test_input = '04-30'
     try:
-        result = getdate('04-30')
+        result = getdate(test_input)
         if result is True:
             print(test_input + ' Passed : Expected Result True : Actual Result True')
     except ValueError:
@@ -90,7 +90,7 @@ def check_valid():
     # Test Case 8
     test_input = '05-31'
     try:
-        result = getdate('05-31')
+        result = getdate(test_input)
         if result is True:
             print(test_input + ' Passed : Expected Result True : Actual Result True')
     except ValueError:
