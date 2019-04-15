@@ -8,6 +8,7 @@
 """
     This program uses the datetime library to validate user input for correct date entry.
     The user is only required to enter Month and Day so the program will not account for leap years.
+    In the case of February 29 or greater, the results should always return false.
 """
 
 
