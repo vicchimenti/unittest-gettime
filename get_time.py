@@ -3,6 +3,7 @@
 #   19SQ Seattle University
 #   get_time.py
 #   A program to unit test a valid date format
+#   Created 4/15/2019
 
 
 """
