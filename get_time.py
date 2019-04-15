@@ -32,6 +32,54 @@ def check_valid():
             print('01-01 Passed : Expected Result True : Actual Result True')
     except ValueError:
         print('01-01 Failed : Expected Result True : Actual Result False')
+    try:
+        result = getdate('12-12')
+        if result is True:
+            print('12-12 Passed : Expected Result True : Actual Result True')
+    except ValueError:
+        print('12-12 Failed : Expected Result True : Actual Result False')
+    try:
+        result = getdate('01-13')
+        if result is True:
+            print('01-13 Passed : Expected Result True : Actual Result True')
+    except ValueError:
+        print('01-13 Failed : Expected Result True : Actual Result False')
+    try:
+        result = getdate('02-27')
+        if result is True:
+            print('02-27 Passed : Expected Result True : Actual Result True')
+    except ValueError:
+        print('02-27 Failed : Expected Result True : Actual Result False')
+    try:
+        result = getdate('02-28')
+        if result is True:
+            print('02-28 Passed : Expected Result True : Actual Result True')
+    except ValueError:
+        print('02-28 Failed : Expected Result True : Actual Result False')
+    try:
+        result = getdate('03-29')
+        if result is True:
+            print('03-29 Passed : Expected Result True : Actual Result True')
+    except ValueError:
+        print('03-29 Failed : Expected Result True : Actual Result False')
+    try:
+        result = getdate('04-30')
+        if result is True:
+            print('04-30 Passed : Expected Result True : Actual Result True')
+    except ValueError:
+        print('04-30 Failed : Expected Result True : Actual Result False')
+    try:
+        result = getdate('05-31')
+        if result is True:
+            print('05-31 Passed : Expected Result True : Actual Result True')
+    except ValueError:
+        print('05-31 Failed : Expected Result True : Actual Result False')
+    try:
+        result = getdate('01-01')
+        if result is True:
+            print('01-01 Passed : Expected Result True : Actual Result True')
+    except ValueError:
+        print('01-01 Failed : Expected Result True : Actual Result False')
 
 
 def check_invalid():
@@ -47,6 +95,6 @@ def check_invalid():
 date_today = datetime.datetime.now()
 print("Current Date/Time: ")
 print(str(date_today))
-#print(str(getdate(date_input)))
+# print(str(getdate(date_input)))
 check_valid()
 check_invalid()
