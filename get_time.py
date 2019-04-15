@@ -19,9 +19,9 @@ def getdate(date_in):
     try:
         datetime.datetime.strptime(date_in, '%m-%d')
     except ValueError:
-        print('Invalid Date Format, enter format MM-DD')
+        # print('Invalid Date Format, enter format MM-DD')
         return False
-    print("You entered a valid date")
+    # print("You entered a valid date")
     return True
 
 
@@ -43,10 +43,10 @@ def check_invalid():
         print('01-01 Failed : Expected Result False : Actual Result True')
 
 
-date_input = input("Enter any month and day in the format MM-DD: ")
+# date_input = input("Enter any month and day in the format MM-DD: ")
 date_today = datetime.datetime.now()
 print("Current Date/Time: ")
 print(str(date_today))
-print(str(getdate(date_input)))
+#print(str(getdate(date_input)))
 check_valid()
 check_invalid()
