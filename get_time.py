@@ -103,7 +103,62 @@ def check_invalid():
             print(test_input + ' Passed : Expected Result False : Actual Result False')
     except ValueError:
         print(test_input + ' Failed : Expected Result False : Actual Result True')
-
+    # Test Case 11
+    test_input = '27-01'
+    try:
+        result = getdate(test_input)
+        if result is False:
+            print(test_input + ' Passed : Expected Result False : Actual Result False')
+    except ValueError:
+        print(test_input + ' Failed : Expected Result False : Actual Result True')
+    # Test Case 12
+    test_input = '28-01'
+    try:
+        result = getdate(test_input)
+        if result is False:
+            print(test_input + ' Passed : Expected Result False : Actual Result False')
+    except ValueError:
+        print(test_input + ' Failed : Expected Result False : Actual Result True')
+    # Test Case 13
+    test_input = '29-01'
+    try:
+        result = getdate(test_input)
+        if result is False:
+            print(test_input + ' Passed : Expected Result False : Actual Result False')
+    except ValueError:
+        print(test_input + ' Failed : Expected Result False : Actual Result True')
+    # Test Case 14
+    test_input = '30-01'
+    try:
+        result = getdate(test_input)
+        if result is False:
+            print(test_input + ' Passed : Expected Result False : Actual Result False')
+    except ValueError:
+        print(test_input + ' Failed : Expected Result False : Actual Result True')
+    # Test Case 15
+    test_input = '31-01'
+    try:
+        result = getdate(test_input)
+        if result is False:
+            print(test_input + ' Passed : Expected Result False : Actual Result False')
+    except ValueError:
+        print(test_input + ' Failed : Expected Result False : Actual Result True')
+    # Test Case 16
+    test_input = '07-32'
+    try:
+        result = getdate(test_input)
+        if result is False:
+            print(test_input + ' Passed : Expected Result False : Actual Result False')
+    except ValueError:
+        print(test_input + ' Failed : Expected Result False : Actual Result True')
+    # Test Case 17
+    test_input = '-1-01'
+    try:
+        result = getdate(test_input)
+        if result is False:
+            print(test_input + ' Passed : Expected Result False : Actual Result False')
+    except ValueError:
+        print(test_input + ' Failed : Expected Result False : Actual Result True')
 
 
 # date_input = input("Enter any month and day in the format MM-DD: ")
