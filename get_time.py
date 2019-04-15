@@ -159,6 +159,30 @@ def check_invalid():
             print(test_input + ' Passed : Expected Result False : Actual Result False')
     except ValueError:
         print(test_input + ' Failed : Expected Result False : Actual Result True')
+    # Test Case 18
+    test_input = '02-29'
+    try:
+        result = getdate(test_input)
+        if result is False:
+            print(test_input + ' Passed : Expected Result False : Actual Result False')
+    except ValueError:
+        print(test_input + ' Failed : Expected Result False : Actual Result True')
+    # Test Case 19
+    test_input = '02-30'
+    try:
+        result = getdate(test_input)
+        if result is False:
+            print(test_input + ' Passed : Expected Result False : Actual Result False')
+    except ValueError:
+        print(test_input + ' Failed : Expected Result False : Actual Result True')
+    # Test Case 20
+    test_input = '06-31'
+    try:
+        result = getdate(test_input)
+        if result is False:
+            print(test_input + ' Passed : Expected Result False : Actual Result False')
+    except ValueError:
+        print(test_input + ' Failed : Expected Result False : Actual Result True')
 
 
 # date_input = input("Enter any month and day in the format MM-DD: ")
